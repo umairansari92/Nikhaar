@@ -1,0 +1,177 @@
+
+/* =================== COLOR GROUP  =================== */
+colgroup{
+    color: #FB9EC6
+            #ec8f97
+            #f03939
+            #e58ab2
+            pink;
+}
+
+
+/* =================== GOOGLE FONTS  =================== */
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+/* =================== SCROLL BAR STYLING =================== */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FB9EC6;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+  }
+
+
+
+
+.heading-1 {
+    font-size: 64px;
+    font-weight: 800;
+    font-family:  "Poppins", sans-serif;
+}
+
+.heading-2 {
+    font-size: 54px;
+    font-weight: 600;
+    font-family:  "Poppins", sans-serif;
+}
+
+.heading-3 {
+    font-size: 46px;
+    font-weight: 500;
+    font-family:  "Poppins", sans-serif;
+}
+
+.heading-4 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family:  "Poppins", sans-serif;
+}
+
+
+.heading-5 {
+    font-size: 35px;
+    font-weight: 500;
+    font-family:  "Poppins", sans-serif;
+}
+
+.heading-6 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family:  "Poppins", sans-serif;
+}
+
+.para {
+    font-size: 24px;
+    font-weight: 600;
+    font-family:  "Poppins", sans-serif;
+}
+
+/* a:hover{
+    background-color: #FFFFFF;
+    color: #E63946;
+    border: 2px solid #E63946;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 2rem;
+} */
+
+#hover_chang:hover{
+    background: #bc1939;
+    transition: ease-in all 0.8s;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+
+.read_more {
+    font-size: 17px;
+    background-color: #E63946;
+    border: 1px solid white;
+    color: #fff !important;
+    padding: 13px 0px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    font-weight: 500;
+}
+
+.read_more:hover {
+    background: #bc1939;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+.icon-big{
+    width: 50px;
+    height: 50px;
+}
+
+
+.border-radius-sm{
+    border-radius: 20px;
+}
+
+
+.box-shadow{
+    box-shadow: #e58ab2 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.liner-gridient{
+    background: linear-gradient(40deg, rgba(249,98,159,1) 0%, rgba(230,57,70,1) 25%, rgba(255,0,191,1) 50%, rgba(255,105,180,1) 100%);
+}
+
+/* ==================== TEXT SHADOW COLSE ====================  */
+
+.close {
+    /* background-color: #fff;  */
+    color: #202c2d;
+    text-shadow:
+      0 1px #808d93,
+      -1px 0 #cdd2d5,
+      -1px 2px #808d93,
+      -2px 1px #cdd2d5,
+      -2px 3px #808d93,
+      -3px 2px #cdd2d5,
+      -3px 4px #808d93,
+      -4px 3px #cdd2d5,
+      -4px 5px #808d93,
+      -5px 4px #cdd2d5,
+      -5px 6px #808d93,
+      -6px 5px #cdd2d5,
+      -6px 7px #808d93,
+      -7px 6px #cdd2d5,
+      -7px 8px #808d93,
+      -8px 7px #cdd2d5;
+  }
+  

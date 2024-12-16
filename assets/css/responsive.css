@@ -1,0 +1,136 @@
+@media (max-width: 1300px) {
+    .contact-info p {
+        display: none !important; /* Hide the default contact info */
+    }
+
+    .contact-info-inline {
+        display: block !important; /* Show inline contact info */
+        text-align: center; /* Center the inline contact info below the nav */
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ==================== Extra Large 1200px and above ==================== */
+
+@media (max-width: 1200px){
+
+}
+
+/* ====================  Large 992px to 1199px ==================== */
+@media (max-width: 992px) {
+    
+}
+
+
+/* ==================== Medium 768px to 991px ==================== */
+
+@media (max-width: 768px) {
+
+
+    .heading-1 {
+        font-size: 54px;
+        font-weight: 800;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-2 {
+        font-size: 44px;
+        font-weight: 600;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-3 {
+        font-size: 36px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-4 {
+        font-size: 30px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    
+    .heading-5 {
+        font-size: 25px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-6 {
+        font-size: 20px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .para {
+        font-size: 18px;
+        font-weight: 400;
+        font-family:  "Poppins", sans-serif;
+    }
+
+
+
+
+    
+    .row .story{
+        border: none;
+    }
+    .row .contect {
+        border: none;
+    }
+    
+}
+
+
+
+/* ==================== Small 576px to 767px ==================== */
+
+@media (max-width: 576px) {
+  
+    .heading-1 {
+        font-size: 44px;
+        font-weight: 800;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-2 {
+        font-size: 34px;
+        font-weight: 600;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-3 {
+        font-size: 26px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-4 {
+        font-size: 20px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    
+    .heading-5 {
+        font-size: 18px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .heading-6 {
+        font-size: 15px;
+        font-weight: 500;
+        font-family:  "Poppins", sans-serif;
+    }
+    
+    .para {
+        font-size: 14px;
+        font-weight: 400;
+        font-family:  "Poppins", sans-serif;
+    }
+}

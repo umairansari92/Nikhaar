@@ -1,0 +1,525 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* ================ BODY SECTION STYLING ================  */
+body {
+    --max-width-global-container:var(--max-width-global-container);
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #E63946 !important;
+  background-color: #FFFFFF;
+}
+/* ================ BODY SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+ /* ================ NAVBAR SECTION STYLING START ================  */
+.navbar{
+    display: flex;
+    background-color: #ec8f97 !important;
+    flex-wrap: wrap;
+}
+
+
+.navbar .container-fluid .navbar-brand img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.navbar .nav-menu .nav-item{
+    margin: 0 auto;
+    display: inline;
+    padding: 2rem;
+}
+.navbar .nav-menu .nav-item a{
+    text-decoration: none;
+    background-color: #E63946;
+    color: #FFFFFF;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+}
+
+.navbar .nav-menu .nav-item a:hover{
+    background-color: #FFFFFF;
+    color: #E63946;
+    border: 2px solid #E63946;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+
+.navbar .container-fluid .contact-info p {
+    color: #ffffff
+}
+ /* ================ NAVBAR SECTION STYLING END ================  */
+
+
+
+
+
+
+
+ /* ================ MAIN SECTION STYLING START ================  */
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* ================ MAIN SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+ /* ================ TAGLINE SECTION SHOWCASE STYLING START ================  */
+.tagline-showcase h2{
+    /* font-size: 64px; */
+    font-weight: 900 !important;
+    text-transform: uppercase;
+}
+
+
+.tagline-showcase h2 span{
+    color: #FB9EC6;
+}
+
+.tagline-showcase p #element{
+    font-size: 40px;
+    font-family:  "Poppins", sans-serif;
+    font-weight: 600    ;
+}
+
+
+ /* ================ TAGLINE SECTION SHOWCASE STYLING END ================  */
+ 
+ 
+ 
+
+
+
+
+
+ /* ================ HERO SECTION STYLING START ================  */
+ 
+ .carousel-inner img{
+        width: 640px;
+        height: 640px;
+ }
+
+ .carousel-inner h1, p{
+    color: #ec8f97;
+ }
+
+.carousel-inner .para{
+    text-shadow: 3px 2px 2px rgba(15, 15, 15, 0.4); 
+}
+
+ /* ================ HERO SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+ /* ================ SERVICE SECTION STYLING START ================  */
+ .service {
+     padding: 90px 0;
+     background: #fff;
+     background-color: #ec8f97;
+    }
+    
+
+
+.service .titlepage .heading {
+        font-size: 45px !important;
+        color: #ff0015;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline dashed;
+
+    }
+
+.service_box {
+    background: #fff;
+    text-align: center;
+    padding: 50px 20px 25px 20px;
+    border: #e9e9e9 solid 1px;
+    transition: ease-in all 0.5s;
+    margin-bottom: 30px;
+}
+
+.service_box h3 {
+    color: #070803;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 25px;
+    transition: ease-in all 0.5s;
+}
+
+.service_box p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #2e2e2e;
+    transition: ease-in all 0.5s;
+}
+
+.service_box i {
+    padding-bottom: 10px;
+    display: block;
+}
+
+#hover_chang:hover.service_box h3 {
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+#hover_chang:hover.service_box p {
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+/* ================ SERVICE SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+/* ================ ABOUT SECTION STYLING START ================  */
+.about {
+    margin: 50px auto;
+    background-color:#f03939;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .titlepage {
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.about .titlepage h2 {
+    text-decoration: underline;
+    color:white;
+}
+
+.about .titlepage p {
+    color:white;
+    margin: 10px auto;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px !important;
+}
+/* ================ ABOUT SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+/* ================ PRICING SECTION STYLING START ================  */
+.pricing{
+    margin-top: 10%;
+}
+
+
+.pricing .cards .pricing-card{
+    /* border: 1px solid red; */
+    box-shadow: #e58ab2 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.pricing .header h1 {
+    
+    background: linear-gradient(40deg, rgba(249,98,159,1) 0%, rgba(230,57,70,1) 25%, rgba(255,0,191,1) 50%, rgba(255,105,180,1) 100%);
+    color: transparent;
+    background-clip: text;
+}
+
+.pricing .cards .pricing-card{
+    border-radius: 15px;
+    padding-bottom: 0px !important;
+    margin-top: 30px;
+    transition: 0.8s ease-in-out;
+}
+.pricing .cards .pricing-card:hover{
+    background-color: #f03939;
+    border-radius: 50px;
+    color: #FFFFFF !important;
+}
+
+
+.pricing .cards .price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FB9EC6;
+    font-family: "Roboto", serif;
+}
+
+.pricing .cards h3{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:underline dotted;
+}
+.pricing .cards ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Alegreya", serif;
+}
+/* ================ PRICING SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+
+/* ================ GALLERY SECTION STYLING START ================  */
+.gallery {
+    padding: 60px 0;
+    background-color: #fef6f9;
+}
+
+.gallery .header h1 {
+    font-size: 2rem;
+    color: #b3005e;
+    margin-bottom: 10px;
+}
+
+.gallery .header h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.gallery .header h3 span {
+    color: #b3005e;
+    font-weight: bold;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item .video-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #b3005e;
+    font-weight: bold;
+}
+/* ================ GALLERY SECTION STYLING END ================  */
+
+
+
+
+
+
+
+/* ================ FOOTER SECTION STYLING START ================  */
+.footer{
+    background-color: #e58ab2;
+    color: #FFFFFF;
+}
+
+.footer .heading3 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.footer p{
+    color: #FFFFFF;
+}
+/* ================ FOOTER SECTION STYLING END ================  */
+
+
+
+/* ABOUT.HTML PAGE STYLING START */
+.about-page{
+    border-top: 3px solid pink;
+    margin: auto auto;
+}
+
+.about-page span{
+    color: #f03939;
+    font-weight: 600;
+    text-decoration: underline;
+} 
+
+
+.about-page .row {
+   display: flex;
+}
+
+.about-page .services-list {
+    margin-top: 10rem !important;
+    border-left: 2px solid pink ;
+    
+}
+.welcome h1{
+    margin-top: 3rem;
+}
+
+.about-page .why{
+    padding: 2rem;
+    max-width: 70%;
+    margin: 5rem auto;
+    background-color: #eedde4;
+    border-radius: 15px;
+}
+
+.about-page .why p{
+    color: #b3005e;
+    font-size: 20px;
+
+}
+
+.why h5{
+    font-size: 25px;
+}
+
+
+
+.about-page .story{
+    border-left: 3px dashed pink;
+    
+}
+
+.about-page .contect{
+    border-left: 3px dashed pink;
+}
+
+/* ABOUT.HTML PAGE STYLING END */
+
+
+/* SERVICES PAGE STYLING START */
+
+.services-section {
+    padding: 50px 0;
+}
+
+.services-section .container {
+    border: 2px solid #f03939;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f03939;
+}
+
+
+
+.services-section .container h1 {
+    color: #ffffff;
+    font-family: "roboto" serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.services-section .container  h4 {
+    color: #ffffff;
+    font-family: "roboto" serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.services-section .container p{
+    color: #e9e9e9;
+    font-weight: 600;
+    font-family: "popins" serif;
+}
+
+.services-section .container .card {
+    border-color: #FB9EC6;
+    background-color: #ffffff;
+    box-shadow: #e58ab2 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.6s ease-in-out;
+    
+}
+
+.services-section .container .card:hover{
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+
+
+.services-section .container .card-title {
+    color: #e70064;
+}
+
+.services-section .container .card-text, ul li {
+    color: #8a5559;
+}
+
+
+.services-section .container ul {
+    list-style-type: disc;
+}
+
+
+.services-section .container .card-body {
+    /* background-color: #e58ab2; */
+    border-radius: 10px;
+}
+
+.services-section .container .card ul li strong {
+    color: #f03939;
+}
+
+/* SERVICES PAGE STYLING END */
+
+
