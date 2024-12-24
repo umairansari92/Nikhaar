@@ -107,8 +107,8 @@
 @media (max-width: 576px) {
   
     .navbar .container-fluid .navbar-brand img{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
     }
 
