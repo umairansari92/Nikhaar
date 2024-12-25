@@ -1,33 +1,38 @@
-const slides = document.querySelectorAll(".carousel-slide");
-const prevButton = document.querySelector(".carousel-control-prev");
-const nextButton = document.querySelector(".carousel-control-next");
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("form");
 
-let currentIndex = 0;
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault(); // Prevent the default form submission
 
-function updateSlide() {
-    slides.forEach((slide, index) => {
-        slide.classList.toggle("active", index === currentIndex);
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                service: document.getElementById("service").value,
+                date: document.getElementById("appointment-date").value,
+                time: document.getElementById("appointment-time").value,
+                message: document.getElementById("message").value,
+            };
+
+            try {
+                const response = await fetch("/api/book-appointment", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert("Appointment successfully booked! Confirmation has been sent.");
+                } else {
+                    alert(`Error: ${result.message}`);
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                alert("An error occurred while booking the appointment.");
+            }
+        });
     });
-}
-
-prevButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateSlide();
-});
-
-nextButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateSlide();
-});
-
-// Initialize the first slide
-updateSlide();
-
-
-
-
-
-
-
