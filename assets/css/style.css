@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #E63946 !important;
+  /* color: #E63946 !important; */
   background-color: #FFFFFF;
 }
 /* ================ BODY SECTION STYLING END ================  */
@@ -153,8 +153,13 @@ main {
     font-size: 40px !important;
     font-family:  "Poppins", sans-serif;
     font-weight: 600;
+    cursor: text;
+    
 }
 
+.tagline-showcase p #element::selection {
+    font-size: inherit;
+}
 
  /* ================ TAGLINE SECTION SHOWCASE STYLING END ================  */
  
@@ -296,9 +301,15 @@ main {
 /* ================ PRICING SECTION STYLING START ================  */
 .pricing{
     margin-top: 10%;
+    display: flex;
 }
 
-
+.pricing .container .header h3 span{
+    font-weight: 700;
+    text-decoration: underline;
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+}
 .pricing .cards .pricing-card{
     /* border: 1px solid red; */
     box-shadow: #e58ab2 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
