@@ -172,3 +172,281 @@
         border-radius: 15px;
     }
 }
+
+/* Mobile First Responsive Design */
+
+/* Base styles (mobile first) */
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Typography */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.3rem; }
+p { font-size: 1rem; }
+
+/* Navigation */
+.navbar {
+    padding: 0.5rem;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-collapse {
+    background-color: #fff;
+}
+
+.nav-link {
+    padding: 0.8rem 1rem;
+}
+
+/* Hero Section */
+.carousel {
+    margin: 1rem 0;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+/* Services Section */
+.service_box {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.icon-big {
+    width: 80px;
+    height: 80px;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+}
+
+.about img {
+    margin-bottom: 1rem;
+}
+
+/* Pricing Section */
+.pricing-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* Gallery Section */
+.gallery-item {
+    margin-bottom: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 2rem 0;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social a {
+    margin: 0 0.5rem;
+}
+
+/* Responsive Breakpoints */
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .carousel-item img {
+        height: 350px;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.5rem; }
+    
+    .carousel-item img {
+        height: 400px;
+    }
+    
+    .service_box {
+        margin-bottom: 0;
+    }
+    
+    .pricing-card {
+        margin-bottom: 0;
+    }
+    
+    .footer {
+        text-align: left;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .navbar-brand img {
+        max-height: 60px;
+    }
+    
+    .carousel-item img {
+        height: 500px;
+    }
+    
+    .icon-big {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    html {
+        font-size: 18px;
+    }
+    
+    .carousel-item img {
+        height: 600px;
+    }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* Utility Classes */
+.text-center-mobile {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-center-mobile {
+        text-align: left;
+    }
+}
+
+/* Spacing Utilities */
+.m-mobile-0 { margin: 0 !important; }
+.p-mobile-0 { padding: 0 !important; }
+
+@media (min-width: 768px) {
+    .m-mobile-0 { margin: inherit; }
+    .p-mobile-0 { padding: inherit; }
+}
+
+/* Animations */
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in {
+        animation: fadeIn 0.5s ease-in;
+    }
+    
+    .slide-in {
+        animation: slideIn 0.5s ease-out;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
