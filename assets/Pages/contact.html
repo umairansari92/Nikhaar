@@ -373,20 +373,26 @@ document.addEventListener('DOMContentLoaded', function() {
     bookingForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
+        // Get submit button reference
+        const submitButton = bookingForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        
         // Validate date
         const selectedDate = new Date(dateInput.value);
         const currentDate = new Date();
         currentDate.setHours(0, 0, 0, 0);
         
         if (selectedDate < currentDate) {
-            alert('Please select a future date for your appointment.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Invalid Date',
+                text: 'Please select a future date for your appointment.'
+            });
             return;
         }
 
         try {
             // Show loading state
-            const submitButton = document.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton.innerHTML;
             submitButton.innerHTML = 'Booking...';
             submitButton.disabled = true;
 
@@ -414,15 +420,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const result = await response.json();
 
-            if (result.success) {
-                alert('Appointment booked successfully! We have sent you a confirmation email.');
-                this.reset(); // Reset form
+            if (result.status === 'success') {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Appointment booked successfully! We will contact you shortly.'
+                });
+                bookingForm.reset(); // Reset form
             } else {
-                throw new Error(result.error || 'Failed to book appointment');
+                throw new Error(result.message || 'Failed to book appointment');
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Something went wrong! Please try again.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: error.message || 'Something went wrong! Please try again.'
+            });
         } finally {
             // Reset button state
             submitButton.innerHTML = originalButtonText;
