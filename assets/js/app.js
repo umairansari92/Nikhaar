@@ -4,5 +4,4 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("loader").style.display = "none";
       document.querySelector(".content").style.display = "block";
     }, 3000); // Adjust time as needed
-  });
-  
+});
