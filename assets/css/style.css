@@ -322,17 +322,6 @@ main {
     background-clip: text;
 }
 
-.pricing .cards .pricing-card{
-    border-radius: 15px;
-    padding-bottom: 0px !important;
-    margin-top: 30px;
-    transition: 0.8s ease-in-out;
-}
-.pricing .cards .pricing-card:hover{
-    background-color: #f03939;
-    border-radius: 50px;
-    color: #FFFFFF !important;
-}
 
 
 .pricing .cards .price {
@@ -353,6 +342,17 @@ main {
     font-size: 14px;
     font-weight: 500;
     font-family: "Alegreya", serif;
+}
+.pricing .cards .pricing-card{
+    border-radius: 15px;
+    padding-bottom: 0px !important;
+    margin-top: 30px;
+    transition: 0.8s ease-in-out;
+}
+.pricing .cards .pricing-card:hover{
+    background-color: #f03939;
+    border-radius: 50px;
+    color: #FFFFFF;
 }
 /* ================ PRICING SECTION STYLING END ================  */
 
@@ -494,6 +494,12 @@ main {
 
 .about-page .contect{
     border-left: 3px dashed pink;
+}
+
+hr{
+    margin: 2rem auto;
+    width: 80%;
+    
 }
 
 /* ABOUT.HTML PAGE STYLING END */
