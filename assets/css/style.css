@@ -579,3 +579,33 @@ hr{
 }
 
 /* SERVICES PAGE STYLING END */
+
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Style for time input */
+input[type="time"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="time"]:invalid {
+    border-color: #dc3545;
+}
