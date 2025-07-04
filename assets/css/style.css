@@ -19,7 +19,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  /* color: #E63946 !important; */
   background-color: #FFFFFF;
 }
 /* ================ BODY SECTION STYLING END ================  */
@@ -324,7 +323,7 @@ main {
 
 
 
-.pricing .cards .price {
+.pricing .container .cards .pricing-card .price {
     font-size: 24px;
     font-weight: 600;
     color: #FB9EC6;
@@ -345,11 +344,11 @@ main {
 }
 .pricing .cards .pricing-card{
     border-radius: 15px;
-    padding-bottom: 0px !important;
+    padding-bottom: 0px;
     margin-top: 30px;
     transition: 0.8s ease-in-out;
 }
-.pricing .cards .pricing-card:hover{
+.pricing .container .cards .pricing-card:hover{
     background-color: #f03939;
     border-radius: 50px;
     color: #FFFFFF;
@@ -559,7 +558,7 @@ hr{
     color: #e70064;
 }
 
-.services-section .container .card-text, ul li {
+.services-section .container .card-text ul li {
     color: #8a5559;
 }
 
